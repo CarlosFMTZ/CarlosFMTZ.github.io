@@ -1,0 +1,11 @@
+{
+    "name": "Links Carlos",
+    "short_name": "Carlos Frias Martinez - Emprendedor - Ingeniero - Desarrollador",
+    "description": "Links Carlos",
+    "theme_color": "#fff",
+    "background_color": "white",
+    "display": "standalone",
+    "Scope": "./",
+    "start_url": "index.html",
+    "splash_pages": null
+  }
