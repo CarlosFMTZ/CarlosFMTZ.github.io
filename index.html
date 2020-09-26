@@ -216,7 +216,6 @@
     })
 </script>
 <style>
-    
     body {
         --primary: 22,186,240;
         --color: 44, 62, 80;
@@ -274,7 +273,7 @@
         color: rgb(var(--text));
     }
     .avatar img {
-        width: 100px;
+        width: 80px;
         border-radius: 30px;
     }
     .con-menu {
@@ -406,15 +405,29 @@
         padding: 18px 22px;
         text-decoration: none;
         font-size: 1rem;
-        color: #fff;
+        /* color: #fff; */
+        color: rgb(var(--color));
         display: flex;
         align-items: center;
         justify-content: center;
-        background: rgb(var(--primary));
-        margin-bottom: 16px;
+        /* background: rgb(var(--primary)); */
+        /* background: rgb(var(--color));; */
+        margin-bottom: 12px;
         border-radius: 25px;
         position: relative;
-        box-shadow: 0px 10px 30px 0px rgba(var(--primary), .15);
+        /* border: 2px solid rgb(var(--color)); */
+        background: #fff;
+        /* box-shadow: 0px 10px 30px 0px rgba(var(--primary), .15); */
+    }
+    .con-links a:after {
+        content: '';
+        left: 0px;
+        top: 0px;
+        width: 61px;
+        height: 61px;
+        background: rgb(var(--color));;
+        position: absolute;
+        border-radius: 25px;
     }
     .con-links a:last-child {
         margin-bottom: 40px;
@@ -423,17 +436,21 @@
         max-width: 22px;
         position: absolute;
         left: 20px;
+        z-index: 10;
     }
     .con-links a svg {
         width: 22px;
         fill: #fff;
         position: absolute;
-        left: 20px;
+        left: 19px;
+        z-index: 10;
     }
     .con-links a i {
         font-size: 1.6rem;
         position: absolute;
-        left: 20px;
+        left: 18px;
+        z-index: 10;
+        color: #fff;
     }
     .con-links a span {
         text-align: center;
