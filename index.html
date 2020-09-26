@@ -7,6 +7,7 @@
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="manifest" href="manifest.json">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
 </head>
 <body>
     <div class="content">
@@ -215,8 +216,52 @@
     })
 </script>
 <style>
+body {
+  height: 100vh;
+  overflow: hidden;
+  /* background: 
+    radial-gradient(circle at bottom, #fff -30%, transparent 70%),
+    linear-gradient(to right, #134a8e, #00b6f1 50%),
+    #fff; */
+  background: radial-gradient(circle at bottom, #fff, transparent 80%), -webkit-gradient(linear, left bottom, left top, from(dodgerblue), color-stop(70%, transparent)), -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, rgba(255, 255, 255, 0.4))), #1e90ff;
+  background: radial-gradient(circle at bottom, #fff, transparent 80%), linear-gradient(to top, dodgerblue 0%, transparent 70%), linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.4) 70%), #1e90ff;
+  -webkit-animation: bg 30s infinite;
+          animation: bg 30s infinite;
+}
+
+@-webkit-keyframes bg {
+  0%, 100% {
+    background-color: #1e90ff;
+  }
+  25% {
+    background-color: #39d24a;
+  }
+  50% {
+    background-color: #ffe244;
+  }
+  75% {
+    background-color: #ff36a3;
+  }
+}
+
+@keyframes bg {
+  0%, 100% {
+    background-color: #1e90ff;
+  }
+  25% {
+    background-color: #39d24a;
+  }
+  50% {
+    background-color: #ffe244;
+  }
+  75% {
+    background-color: #ff36a3;
+  }
+}
+
+    
     body {
-        --primary: 25,91,255;
+        --primary: 22,186,240;
         --color: 44, 62, 80;
         display: flex;
         align-items: flex-start;
