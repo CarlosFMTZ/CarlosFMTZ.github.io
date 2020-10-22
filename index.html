@@ -178,26 +178,58 @@
     }
 })();
 </script>
-
+<style type="text/css">
+.shadow {
+  position: relative;
+  margin: 10px auto;
+  width: 400px;
+  background: linear-gradient(0deg,#fff,#fff);  
+}
+.shadow:before,
+.shadow:after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background: linear-gradient(45deg,#fb0094, #0000ff, #00ff00, #ffff00, #ff0000,#fb0094, #0000ff, #00ff00, #ffff00, #ff0000);
+  background-size: 400%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: -1;
+  animation: animate 20s linear infinite;
+}
+.shadow:after {
+  filter: blur(20px)
+}
+@keyframes animate {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 300% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+</style>
 </head>
 <body>
-    <div class="content">
-
+    <div class="content">   
+         <div class="shadow">
         <div class="con-user">
             <div class="avatar">
                 <img src="/avatar.png" alt="">
             </div>
+        </div>
             <div class="title">
                 <h1>
                     @carloslm24
                 </h1>
-                <p>
-                    Emprendedor - Ingeniero - Desarrollador
-                    <br> Co-founder <a target="_blank" href="http://smartdomain.com.mx/">Smart Domain</a>
-                    <br>
-                    Orgullosamente Mexicano, Querétano.
-                    <br>
-                    Me gusta conocer y aprender nuevas cosas!
+                <p>&nbsp;Emprendedor - Ingeniero - Desarrollador
+                    <br>&nbsp;Co-founder <a target="_blank" href="http://smartdomain.com.mx/">Smart Domain</a>
+                    <br>&nbsp;Orgullosamente Mexicano, Querétano.
+                    <br>&nbsp;Me gusta conocer y aprender nuevas cosas!
                     <br>
                     <div class="social">
                 <li>    
